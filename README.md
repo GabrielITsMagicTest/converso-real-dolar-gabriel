@@ -23,5 +23,5 @@ Um projeto simples em HTML, CSS e JavaScript que permite converter valores entre
    git clone https://github.com/GabrielITsMagicTest/converso-real-dolar-gabriel.git
 
 ## site online
-[link do projeto](https://conversoreal.netlify.app/)
+link do site: https://converso-real-dolar.netlify.app/
 
