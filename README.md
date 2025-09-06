@@ -2,7 +2,7 @@
 
 Um projeto simples em HTML, CSS e JavaScript que permite converter valores entre **Real** e **Dólar** de forma rápida e prática.
 
-![Imagem do Projeto](caminho-da-sua-imagem.jpg) <!-- Substitua pelo nome do arquivo da sua imagem -->
+![Imagem do Projeto](my-dolar.jpg) <!-- Substitua pelo nome do arquivo da sua imagem -->
 
 ## Funcionalidades
 
