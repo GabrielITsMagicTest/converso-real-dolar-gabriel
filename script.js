@@ -8,6 +8,7 @@ fetch("https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_LhPKeH5T9zutKCb
 })
 .catch(error => {
     console.error('Ocorreu um erro:', error);
+    alert(error)
 });
 
 function calculGetDolar() {
@@ -17,6 +18,7 @@ function calculGetDolar() {
     let resultado = real / api_Real
     valor.textContent = "$ " + resultado.toFixed(2)
 }
+
 function calculGetReal() {
     let dolar = document.getElementById("input-valor").value
     let valor = document.getElementById("valor")
