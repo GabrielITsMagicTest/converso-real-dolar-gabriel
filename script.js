@@ -1,15 +1,13 @@
-done = false
+api_Real = 5.48
 
 // chamando a api
 fetch("https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_LhPKeH5T9zutKCbSLUHjtCtyCuE7FOfJ7HwOiaNW")
 .then( (res) => res.json()) 
 .then( (data) => {
     api_Real = data.data.BRL
-    done = true
 })
 .catch(error => {
     console.error('Ocorreu um erro:', error);
-    api_Real = 5.48
 });
 
 function calculGetDolar() {
