@@ -11,12 +11,12 @@
     <img src="my-dolar.jpg">
 
     <div>
-        <input id="input-valor" type="number" placeholder="Valor">
+        <input id="input-valor" type="number" placeholder="Valor" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
 
         <p id="valor">$ 0</p>
 
-        <button onclick="calcularDolar()">Converte dolar</button>
-        <button onclick="calcularReal()">Converte real</button>
+        <button onclick="calculGetDolar()">Converte dolar</button>
+        <button onclick="calculGetReal()">Converte real</button>
     </div>
 
 </body>
@@ -66,24 +66,6 @@
     }
 </style>
 
-<script>
-    function calcularDolar() {
-        let real = document.getElementById("input-valor").value
-        let valor = document.getElementById("valor")
-
-        let resultado = real * 0.18
-
-        valor.textContent = "$ " + resultado.toFixed(2)
-    }
-
-    function calcularReal() {
-        let dolar = document.getElementById("input-valor").value
-        let valor = document.getElementById("valor")
-
-        let resultado = 5.48 * dolar
-
-        valor.textContent = "$ " + resultado.toFixed(2)
-    }
-</script>
+<script src="script.js"></script>
 
 </html>
